@@ -1,0 +1,80 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{background-color: #c6004a;}
+.container{max-width: 1200px;width: 100%;margin: 0 auto;}
+
+.box-inner{width: 100%;height: 100vh;display: flex;align-items: center;justify-content: center;}
+
+.buttons{width: 400px;height: auto;padding: 20px;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;background-color: #c6004a;}
+.box{width: 20%;text-align: center;line-height: 0;}
+input{appearance: none;height: 50px;width: 50px;outline: none;cursor: pointer;position: relative;margin: 10px;border-radius: 50%;box-shadow: 4px 4px 8px #4d001d, -4px -4px 8px #ff005f;}
+input:checked{box-shadow: inset -4px -4px 10px #ff005f, inset 4px 4px 10px #4d001d;}
+input::after{content: '';position: absolute;font-family: 'Material Icons';font-size: 34px;top:50%;left: 50%;transform: translate(-50%,-50%);color: #ffd4e4;}
+
+input.internet::after{content: 'swap_vert'}
+input.internet:checked::after{content: 'swap_horiz';}
+
+input.wifi::after{content: 'wifi_off'}
+input.wifi:checked::after{content: 'wifi';}
+
+input.bluetooth::after{content: 'bluetooth_disabled'}
+input.bluetooth:checked::after{content: 'bluetooth';}
+
+input.location::after{content: 'location_off'}
+input.location:checked::after{content: 'location_on';}
+
+input.volume::after{content: 'volume_up'}
+input.volume:checked::after{content: 'volume_off';}
+
+input.airplanemode::after{content: 'airplanemode_inactive'}
+input.airplanemode:checked::after{content: 'airplanemode_active';}
+
+input.rotetion::after{content: 'autorenew'}
+input.rotetion:checked::after{content: 'cached';}
+
+input.data::after{content: 'data_usage'}
+input.bikemod::after{content: 'two_wheeler'}
+input.hotspot::after{content: 'tap_and_play'}
+
+
+
+
+
+/* 
+swap_vert - swap_horiz
+wifi_off - wifi
+volume_up - volume_off
+autorenew - cached
+airplanemode_inactive - airplanemode_active
+bluetooth_disabled - bluetooth
+location_off - location_on
+
+data_usage
+two_wheeler
+tap_and_play(hotspot)
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+font-family: 'Material Icons';
+font-weight: normal;
+font-style: normal;
+font-size: 24px;
+line-height: 1;
+letter-spacing: normal;
+text-transform: none;
+display: inline-block;
+white-space: nowrap;
+word-wrap: normal;
+direction: ltr;
+-moz-font-feature-settings: 'liga';
+-moz-osx-font-smoothing: grayscale; */
